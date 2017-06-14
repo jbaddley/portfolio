@@ -1,0 +1,141 @@
+/**
+    normally I would use less or sass and seperate css files into
+    more specific chunks
+**/
+
+body {
+  background: #080808;
+}
+.background {
+    position: absolute;
+    transform: scale(2) translate(-15%, -5%);
+    opacity: .2;
+    z-index: 0;
+}
+
+.app {
+  text-align: center;
+}
+
+.app-logo {
+  height: 120px;
+}
+
+.app-header {
+  padding: 20px;
+  color: white;
+  display: flex;
+  position: relative;
+}
+
+.app-header h2 {
+    margin: 40px 20px;
+}
+
+.app-intro {
+  font-size: large;
+}
+
+.map-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.weather-map {
+  margin: 0 32px;
+  flex-grow: 4;
+  height: 600px;
+}
+.weather-details {
+  color: white;
+  width: 450px;
+  flex-wrap: wrap;
+}
+
+.weather-details .header {
+    display: flex;
+}
+
+.weather-details .title {
+    flex-grow: 1;
+    margin-left: 8px;
+}
+
+.weather-details .city-state {
+    opacity: .9;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.weather-details .condition {
+    text-transform: capitalize;
+    text-align: left;
+    margin-top: 0;
+}
+
+
+.weather-icon {
+    width: 150px;
+    display: inline-block;
+}
+
+.info {
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    color: white;
+    opacity: .6;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.copyright {
+    position: fixed;
+    bottom: 74px;
+    left: -58px;
+    color: white;
+    opacity: .6;
+    font-size: 10px;
+    font-weight: normal;
+    transform: rotate(-90deg);
+}
+
+.information {
+    display: flex;
+}
+
+.information .detail {
+    flex-grow: 1;
+}
+
+.information .detail label {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.information .wind-speed {
+    height: 60px;
+}
+
+.information .wind-speed img {
+    margin: 7px 0;
+}
+
+.information .wind-speed div,
+.information .sunset div,
+.information .sunrise div {
+    font-size: 12px;
+}
+
+.information .sunset img, .information .sunrise img {
+    height: 42px;
+}
+
+.full-address {
+    opacity: .3;
+    margin-top: 32px;
+    font-size: 12px;
+}
